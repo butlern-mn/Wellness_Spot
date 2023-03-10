@@ -1,0 +1,16 @@
+header {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #013863;
+    margin: 0px !important;
+}
+
+p {
+    font-family: Acme;
+    font-size: 48px;
+    font-style: normal;
+    color: white;
+}
