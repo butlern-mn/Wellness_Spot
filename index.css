@@ -1,16 +1,31 @@
-header {
-    width: 100%;
-    padding: 1%;
+
+
+.name-logo {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
-    background-color: #013863;
-    margin: 0px !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8FCDFB;
 }
 
 p {
-    font-family: Acme;
-    font-size: 48px;
+    font-family: Lato;
+    font-size: 30px;
     font-style: normal;
     color: white;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8FCDFB;
 }
