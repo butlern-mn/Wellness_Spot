@@ -9,6 +9,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -24,81 +27,119 @@
     </head>
     
     <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="title-nav flex-container">
-            <div class="name-logo">
-                <h1>Wellness Spot</h1>
-                <a class="logo" href="#"><img src="/images/Wellness_Spot_Logo.png"></a>
-            </div>
-            <p>Wellness Spot creates space for students to Be Well so they can Be Successful</p>
-        </div>
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"></a>
-            </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Find Support Services</a></li>
-                            <li><a href="#">Resources by Media Type</a></li>
-                            <li><a href="#">Resources by Topic</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Alumni Connect
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Alumni Interviews</a></li>
-                            <li><a href="#">Mentorship Program</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-left" action="/action_page.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search" name="search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-        </div>
-    </nav>
-
-    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="container">
-                        <h2>Card titles, text, and links</h2>
-                        <p>Use .card-title to add card titles to any heading element. The .card-text class is used to remove bottom margins for a p element if it is the last child (or the only one) in card-body. The .card-link class adds a blue color to any link, and a hover effect.</p>
-                        <div class="card" style="width:400px">
-                            <img class="card-img-top" src="/images/Wellness_Spot_Logo.png" alt="Card image">
-                          <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some example text. Some example text.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                          </div>
+        <header class="header">
+            <nav>
+                <div class="title-nav flex-container">
+                <div class="name-logo">
+                    <h1>Wellness Spot</h1>
+                    <img src="/images/Wellness_Spot_Logo_60.png">
+                </div>
+                <div>
+                    <p>Wellness Spot creates a space for students to Be Well so they can Be Successful.</p>
+                </div>
+                </div>
+                
+               
+                <div class="navbar">
+                    <a href="#home">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Resources 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                        <a href="#">Find Support Services</a>
+                        <button class="dropbtn">Resources by Topic 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content">
+                            <a href="#">Stress Management</a>
+                            <a href="#">Time Management</a>
+                            <a href="#">Anxiety and Depression</a>
+                            </div>
+                            <button class="dropbtn">Resources by Media Type 
+                                <i class="fa fa-caret-down"></i>
+                                </button>
+                                    <div class="dropdown-content">
+                                    <a href="#">Videos</a>
+                                    <a href="#">Audios</a>
+                                    <a href="#">Artilces</a>
+                                    </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropbtn">Alumni Connect 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="#">Alumni Interviews</a>
+                        <a href="#">Mentorship Program</a>
+                      </div>            
+                    </div>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div> 
                 </div>
-                <div class="col-lg-9">
-                    <div class="jumbotron">
-                        <img src="/images/Half_Hero_1.png">
-                    </div>   
-                </div>        
+                
+                <div class="topnav">
+                    <a href="#home" class="active">Home</a>
+                        <div id="myLinks">
+                            <a href="#resources">Resources</a>
+                            <a href="#alumniconnect">Alumni Connect</a>
+                        </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                             <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+            </nav>
+        </header> 
+        
+        <section id="containerGrid">
+            <div id="leftSide">
+                <div class="tiles">
+                    <img src="/images/Wellness_Spot_Placeholder_Circle.png">
+                    <a href="#">Let's Connect</a>
+                </div>
+                <div class="tiles">
+                    <img src="/images/Wellness_Spot_Placeholder_Circle.png">
+                    <a href="#">Student and Alumni</a>
+                </div>
+                <div class="tiles">
+                    <img src="/images/Wellness_Spot_Placeholder_Circle.png">
+                    <a href="#">Track My Wellness</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-9"></div>
+            
+            <div id="rightSide" class="hero">
+                <img src="/images/Wellness_Spot_Hero_Ideation.png" class="heroImage">
+                <p1>Wellness Spot encourages boot camp students to focus on their overall well being by promoting a culture of connection and self-care.</p1>
+                <p1>"Quote from current student or alumni"</p1>
             </div>
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-9"></div>
+        </section>
+        
+        <div class="container">
+            <p>Sign-up for weekly wellness tips</p>
+            <form class="form-inline" action="/action_page.php">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>         
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>
         </div>
-        </div>        
+
+        <footer>
+            <div>
+                <a href="https://idp.bootcampspot.com/ui/?requestId=c01595e8-bbdf-49b1-8678-02422db6b34b"><img src="/images/Wellness_Spot_Footer_Arrow - Left.png"></a>
+                <p2>Back to Bootcamp Spot</p2>
+            </div>
+            <div>
+                <p2>Copyright 2023 Wellness Spot</p2>
+            </div>
+        </footer>
     </body>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
