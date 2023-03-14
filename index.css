@@ -47,7 +47,7 @@ p {
   
   .navbar a {
     float: left;
-    font-style: Lato;
+    font-family: Lato;
     font-size: 16px;
     color: black;
     text-align: center;
