@@ -10,6 +10,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
         <link href="./index.css" rel="stylesheet" type="text/css">
     </head>
     
@@ -28,10 +33,12 @@
                 </div>
                 </div>
                
-                <div class="navbar">
+                <div class="menubar">
                     <div class="container">
                         <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Resources
+                            <a href="#home">Home</a>
+                            <div>
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Resources
                           <span class="caret"></span></button>
                           <ul class="dropdown-menu">
                             <li><a tabindex="-1" href="#">Track My Wellness</a></li>
@@ -54,6 +61,16 @@
                             </li>
                           <li><a tabindex="-1" href="#">Let's Connect</a></li>
                           </ul>
+                            </div>
+                            <div>
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Alumni Connect
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a tabindex="-1" href="#">Alumni Mentorship Program</a></li>
+                              <li><a tabindex="-1" href="#">Alumni Interviews</a></li>
+                              <li><a tabindex="-1" href="#">Alumni Stories</a></li>
+                              </ul>
+                            </div>
                         </div>
                       </div>
                     
@@ -106,8 +123,16 @@
             <div><p>Copyright 2023 Wellness Spot</p></div>
         </footer>
     </body>
-
+    <script>
+        $(document).ready(function(){
+          $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+          });
+        });
+        </script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="./index.js"></script>
+    <script src="./index.js"></script>
 
 </html>
