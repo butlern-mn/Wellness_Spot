@@ -29,27 +29,33 @@
                 </div>
                
                 <div class="navbar">
-                    <a href="#home">Home</a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Resources 
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Find Support Services</a>
-                            <a href="#">Resources by Topic</a>
-                            <a href="#">Resources by Media Type</a>                        
+                    <div class="container">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Resources
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">Track My Wellness</a></li>
+                            <li><a tabindex="-1" href="#">Find Support Services</a></li>
+                            <li class="dropdown-submenu">
+                              <a class="test" tabindex="-1" href="#">Resources by Topic<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Stress Management</a></li>
+                                <li><a tabindex="-1" href="#">Time Management</a></li>
+                                <li><a tabindex="-1" href="#">Anxiety & Depression</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                              <a class="test" tabindex="-1" href="#">Resources by Media Type<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Video Resources</a></li>
+                                <li><a tabindex="-1" href="#">Aduio Resources</a></li>
+                                <li><a tabindex="-1" href="#">Articles</a></li>
+                              </ul>
+                            </li>
+                          <li><a tabindex="-1" href="#">Let's Connect</a></li>
+                          </ul>
                         </div>
-                    </div>
-                    
-                    <div class="dropdown">
-                      <button class="dropbtn">Alumni Connect 
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-content">
-                        <a href="#">Alumni Interviews</a>
-                        <a href="#">Mentorship Program</a>
-                      </div>            
-                    </div>
+                      </div>
                     
                     <div class="search-container">
                         <form action="/action_page.php">
@@ -64,21 +70,18 @@
         <section id="containerGrid">
             <div id="leftSide">
                 <div class="tiles">
-                    <img src="/images/Wellness_Spot_Placeholder_Circle.png">
-                    <a href="#">Track My Wellness</a>
+                    <a href="#"><img src="/images/Track My Wellness 2.png"></a>
                 </div>
                 <div class="tiles">
-                    <img src="/images/Wellness_Spot_Placeholder_Circle.png">
-                    <a href="#">Alumni Mentorship</a>
+                    <a href="#"><img src="/images/Alumni Mentorship 2.png"></a>
                 </div>
                 <div class="tiles">
-                    <img src="/images/Wellness_Spot_Placeholder_Circle.png">
-                    <a href="#">Alumni Stories</a>
+                    <a href="#"><img src="/images/Alumni Stories 2.png"></a>
                 </div>
             </div>
             
             <div id="rightSide" class="hero">
-                <img src="/images/Wellness_Spot_Hero_Ideation.png" class="heroImage">
+                <img src="/images/Homepage Hero.png" class="heroImage">
                 <p>Wellness Spot encourages boot camp students to focus on their overall well being by promoting a culture of connection and self-care.</p>
                 <p>"Quote from current student or alumni"</p>
             </div>
