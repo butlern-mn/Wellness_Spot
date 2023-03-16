@@ -11,16 +11,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
         <link href="./index.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
         <header class="header">
-            <nav>
+          <nav>
                 <div class="title-nav flex-container">
                 <div class="name-logo">
                     <h1>Wellness Spot</h1>
@@ -33,54 +33,37 @@
                 </div>
                 </div>
                
-                <div class="menubar">
-                    <div class="container">
-                        <div class="dropdown">
-                            <a href="#home">Home</a>
-                            <div>
-                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Resources
-                          <span class="caret"></span></button>
-                          <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">Track My Wellness</a></li>
-                            <li><a tabindex="-1" href="#">Find Support Services</a></li>
-                            <li class="dropdown-submenu">
-                              <a class="test" tabindex="-1" href="#">Resources by Topic<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="#">Stress Management</a></li>
-                                <li><a tabindex="-1" href="#">Time Management</a></li>
-                                <li><a tabindex="-1" href="#">Anxiety & Depression</a></li>
-                              </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                              <a class="test" tabindex="-1" href="#">Resources by Media Type<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="#">Video Resources</a></li>
-                                <li><a tabindex="-1" href="#">Aduio Resources</a></li>
-                                <li><a tabindex="-1" href="#">Articles</a></li>
-                              </ul>
-                            </li>
-                          <li><a tabindex="-1" href="#">Let's Connect</a></li>
-                          </ul>
-                            </div>
-                            <div>
-                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Alumni Connect
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                              <li><a tabindex="-1" href="#">Alumni Mentorship Program</a></li>
-                              <li><a tabindex="-1" href="#">Alumni Interviews</a></li>
-                              <li><a tabindex="-1" href="#">Alumni Stories</a></li>
-                              </ul>
-                            </div>
-                        </div>
+                <div class="navbar">
+                  <a href="#home">Home</a>
+                  <div class="dropdown">
+                      <button class="dropbtn">Resources 
+                          <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                          <a href="#">Find Support Services</a>
+                          <a href="#">Resources by Topic</a>
+                          <a href="#">Resources by Media Type</a>                        
                       </div>
-                    
-                    <div class="search-container">
-                        <form action="/action_page.php">
-                          <input type="text" placeholder="Search.." name="search">
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div> 
-                </div>
+                  </div>
+                  
+                  <div class="dropdown">
+                    <button class="dropbtn">Alumni Connect 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Alumni Interviews</a>
+                      <a href="#">Mentorship Program</a>
+                    </div>            
+                  </div>
+                  
+                  <div class="search-container">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                  </div> 
+              </div>
+
             </nav>
         </header> 
         
@@ -122,16 +105,21 @@
             </div>
             <div><p>Copyright 2023 Wellness Spot</p></div>
         </footer>
-    </body>
-    <script>
-        $(document).ready(function(){
-          $('.dropdown-submenu a.test').on("click", function(e){
-            $(this).next('ul').toggle();
-            e.stopPropagation();
-            e.preventDefault();
+
+        <script>
+          $(document).ready(function(){
+            $('.dropdown-submenu a.test').on("click", function(e){
+              $(this).next('ul').toggle();
+              e.stopPropagation();
+              e.preventDefault();
+            });
           });
-        });
-        </script>
+          </script>
+
+    </body>
+
+    
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 

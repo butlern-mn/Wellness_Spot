@@ -41,17 +41,7 @@ p {
 }
 
 /* Navbar */
-.dropdown-submenu {
-    position: relative;
-  }
-  
-  .dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
-  }
-
-.menubar {
+.navbar {
     width: 100% !important;
     overflow: hidden;
     background-color: #8FCDFB;
@@ -61,7 +51,7 @@ p {
     align-items: center;
   }
   
-.menubar a {
+.navbar a {
     float: left;
     font-family: Lato;
     font-size: 16px;
@@ -70,33 +60,73 @@ p {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-.container a {
-    float: left;
-    font-family: Lato;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
+  
 .dropdown {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.dropdown .btn {
     float: left;
     overflow: hidden;
+}
+  
+.dropdown .dropbtn {
     font-family: Lato;
-    font-size: 16px;
+    font-size: 16px;  
+    border: none;
+    outline: none;
     color: black;
-    text-align: center;
     padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #29A3FC;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8FCDFB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #8FCDFB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #29a3fc;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover .dropdown-content2 {
+	display: block;
 }
 
 /* Sidebar */
