@@ -177,9 +177,12 @@ p {
 .assessmentImage {
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
+.namiLogo{
+margin-left:200%;
+}
 .assessmentScale{
   margin-top: 50%;
 }
