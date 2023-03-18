@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wellness Assessment</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+        <link href="./index.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <header class="header">
+          <nav>
+                <div class="title-nav flex-container">
+                    <div class="name-logo">
+                        <h1>Wellness Spot</h1>
+                        <img src="/images/Wellness_Spot_Logo_60.png">
+                    </div>
+                    <div><p>Wellness Spot creates a space for students to Be Well so they can Be Successful.</p></div>
+                    <div class="avatar">
+                        <img src="./images/Avatar.png">
+                        <p>My Account</p>
+                    </div>
+                </div>
+               
+                <div class="container">
+                    <div>
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Home</button>
+                    </div>                         
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Resources
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Track My Wellness</a></li>
+                        <li><a tabindex="-1" href="#">Find Support Services</a></li>
+                        <li class="dropdown-submenu">
+                          <a class="test" tabindex="-1" href="#">Resources by Topic <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">Stress Management</a></li>
+                            <li><a tabindex="-1" href="#">Time Management</a></li>
+                            <li><a tabindex="-1" href="#">Anxiety & Depression</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="test" tabindex="-1" href="#">Resources by Media Type<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">Articles</a></li>
+                            <li><a tabindex="-1" href="#">Audio Resources</a></li>
+                            <li><a tabindex="-1" href="#">Video Resources</a></li>
+                          </ul>
+                        </li>
+                        <li><a tabindex="-1" href="#">Let's Connect</a></li>
+                      </ul>
+                    </div>
+                  
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Alumni Collect
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Alumni Mentorship Program</a></li>
+                        <li><a tabindex="-1" href="#">Alumni Interviews</a></li>
+                        <li><a tabindex="-1" href="#">Alumni Stories</a></li>   
+                      </ul>
+                    </div>
+                    
+                    <div class="search-container">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                  </div>
+                </div>
+            </nav>
+        </header> 
+        
+        <section id="containerGrid">
+            <div id="leftSide">
+                <div class="tiles">
+                    <a href="#"><img src="/images/Track My Wellness 2.png"></a>
+                </div>
+                <div class="tiles">
+                    <a href="#"><img src="/images/Alumni Mentorship 2.png"></a>
+                </div>
+                <div class="tiles">
+                    <a href="#"><img src="/images/Alumni Stories 2.png"></a>
+                </div>
+            </div>
+            
+            <div id="rightSide" class="hero">
+                <img src="/images/Assessment.png" class="assessmentImage">
+                <p>Wellness Spot encourages boot camp students to focus on their overall well being by promoting a culture of connection and self-care.</p>
+                <p>“Wellness Spot helped  connect me to others and find ways to balance all the different stressors I was facing” - Jacob Sprang</p>
+            </div>
+        </section>        
+        <div class="email-container">
+            <p>Sign-up for weekly wellness tips</p>
+            <form class="form-inline" action="/action_page.php">
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>         
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <a href="https://idp.bootcampspot.com/ui/?requestId=c01595e8-bbdf-49b1-8678-02422db6b34b"><img src="/images/Wellness_Spot_Footer_Arrow - Left.png"></a>
+                <p>Back to Bootcamp Spot</p>
+            </div>
+            <div><p>Copyright 2023 Wellness Spot</p></div>
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+              $('.dropdown-submenu a.test').on("click", function(e){
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+              });
+            });
+            </script>    
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+</html>
