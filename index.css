@@ -151,6 +151,11 @@ p {
     margin-bottom: 40px;
 }
 
+.tilesImage {
+  width: 90%;
+  height: auto;
+}
+
 .tiles a {
     font-family: Lato;
     font-size: 24px;
@@ -181,53 +186,74 @@ p {
     color: black;
 }
 
+.hero p1 {
+  font-family: Lato;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
 /* Dashboard */
 
 .dashboardSection {
     margin: 1%; 
     display: grid;
-    gap: 40px;
-    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    grid-template-columns: 3fr 1fr;
 }
 
 .dashboard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  padding: 20px;
+  margin-top: 60px;
 }
 
 .dashboard p {
   font-family: Lato;
   font-size: 36px;
-  font-style: normal;
+  font-style: bold;
   text-align: center;
   color: black;
+}
+
+.dashboardImage {
+  width: 115%;
+  height: auto;
+  margin-top: 60px;
 }
 
 .dashButtons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 20px;
+  margin-top: 250px;
+  margin-left: 30px;
 }
 
 .dashboardButtons {
-  border: none;
+  border: 2px solid black;
+  border-color: black;
   color: black;
   padding: 1%;
   text-align: center;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Lato;
-  height: 60px;
+  font-style: bold;
+  height: 70px;
   width: 250px;
   cursor: pointer;
+  margin-bottom: 70px;
   background-color: #8FCDFB;
   border-radius: 10px;
 }
+
+/* Assessment */
 
 /* Email Sign-up */
 .email-container {
