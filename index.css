@@ -206,6 +206,29 @@ p {
   color: black;
 }
 
+.dashButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.dashboardButtons {
+  border: none;
+  color: black;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Lato;
+  height: 60px;
+  width: 250px;
+  cursor: pointer;
+  background-color: #8FCDFB;
+  border-radius: 10px;
+}
+
 /* Email Sign-up */
 .email-container {
     display: flex;
