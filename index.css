@@ -157,6 +157,32 @@ p {
     text-align: center;
     color: black;
 }
+/* Assessment Section */
+
+.assessmentSection{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.assessment h1{
+  margin-right:17%;
+  padding-bottom: 2%;
+}
+.assessment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  
+}
+.assessmentImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.assessmentScale{
+  margin-top: 50%;
+}
 
 /* Email Sign-up */
 .container {
