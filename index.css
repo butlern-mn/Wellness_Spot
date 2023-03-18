@@ -195,7 +195,6 @@ p {
 }
 
 /* Dashboard */
-
 .dashboardSection {
     margin: 1%; 
     display: grid;
@@ -208,15 +207,11 @@ p {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
-.dashboard p {
-  font-family: Lato;
-  font-size: 36px;
-  font-style: bold;
+.dashboard h1 {
   text-align: center;
-  color: black;
 }
 
 .dashboardImage {
@@ -253,7 +248,55 @@ p {
   border-radius: 10px;
 }
 
+.dashboardButtons button:hover {
+  background-color: #29a3fc;
+}
+
 /* Assessment */
+.assessmentSection{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.assessment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;  
+}
+
+.assessment h1{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.assessmentImage{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.namiLogo{
+  width: 120%;
+  height: auto;
+  margin-left: 170%;
+}
+
+.assessmentScale{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 60%;
+  margin-right: 25%;
+}
+
+.likertImage {
+  width: 90%;
+  height: auto;
+}
 
 /* Email Sign-up */
 .email-container {
