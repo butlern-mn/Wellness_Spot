@@ -35,7 +35,7 @@ h1 {
 
 p {
     font-family: Lato;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     color: black;
 }
@@ -75,15 +75,15 @@ p {
       background-color: #8fcdfb !important;
     }
     
-    .dropdown-submenu .dropdown-menu {
-      top: 0;
-      left: 100%;
-      margin-top: -1px;
-    }
+  .dropdown-submenu .dropdown-menu {
+     top: 0;
+     left: 100%;
+     margin-top: -1px;
+   }
   
-    .open>.dropdown-toggle.btn-default {
-      background-color: #29a3fc !important;
-    }
+  .open>.dropdown-toggle.btn-default {
+     background-color: #29a3fc !important;
+   }
   
   .btn-default:active:hover,
   .btn-default.active:hover,
@@ -138,19 +138,33 @@ p {
 }
 
 #leftSide {
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+#leftSideAssesspage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 40px;
 }
 
 .tiles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .tilesImage {
-  width: 90%;
+  width: 70%;
   height: auto;
 }
 
@@ -370,7 +384,7 @@ p {
 
 .email-container p {
   font-family: Lato;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     color: black;
     margin-left: 20px;
@@ -381,6 +395,7 @@ p {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .form-group {
@@ -389,6 +404,11 @@ p {
     font-style: normal;
     color: black;
     margin-left: 20px;
+    margin-right: 20px;
+}
+
+.email-container button {
+  margin-right: 5px;
 }
 
 .email-container button:hover {
@@ -421,6 +441,7 @@ footer p {
     font-size: 16px;
     font-style: normal;
     color: black;
+    margin-top: 3px;
 }
 
 @media only screen and (max-width: 600px) {
