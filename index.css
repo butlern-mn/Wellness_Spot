@@ -122,9 +122,7 @@ p {
     .dropdown-menu a:hover {
       background-color: #29a3fc !important;
     }
-  
-   
-  
+
     .dropdown-menu a:focus {
       background-color: #29a3fc !important;
       border: none;
@@ -231,8 +229,7 @@ p {
 }
 
 .dashboardButtons {
-  border: 2px solid black;
-  border-color: black;
+  border: 5px solid black;
   color: black;
   padding: 1%;
   text-align: center;
@@ -246,10 +243,6 @@ p {
   margin-bottom: 70px;
   background-color: #8FCDFB;
   border-radius: 10px;
-}
-
-.dashboardButtons button:hover {
-  background-color: #29a3fc;
 }
 
 /* Assessment */
@@ -282,6 +275,11 @@ p {
   width: 120%;
   height: auto;
   margin-left: 170%;
+}
+
+.assessmentSection button:hover {
+  background-color: #29a3fc;
+  border-style: none; 
 }
 
 .assessmentScale{
@@ -319,6 +317,11 @@ p {
     font-style: normal;
     color: black;
     margin-left: 20px;
+}
+
+.email-container button:hover {
+  background-color: #29a3fc;
+  border-style: none; 
 }
 
 /* Footer */
