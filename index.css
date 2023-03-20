@@ -35,7 +35,7 @@ h1 {
 
 p {
     font-family: Lato;
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     color: black;
 }
@@ -173,20 +173,24 @@ p {
 .heroImage {
     width: 100%;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .hero p {
     font-family: Lato;
-    font-size: 36px;
+    font-size: 32px;
     font-style: normal;
     text-align: center;
     color: black;
 }
 
+.herop {
+  margin-bottom: 30px;
+}
+
 .hero p1 {
   font-family: Lato;
-    font-size: 28px;
+    font-size: 24px;
     font-style: italic;
     text-align: center;
     color: black;
@@ -282,6 +286,11 @@ p {
   border-style: none; 
 }
 
+.assessmentSection button:focus {
+  background-color: #29a3fc;
+  border-style: none; 
+}
+
 .assessmentScale{
   display: flex;
   flex-direction: column;
@@ -296,12 +305,75 @@ p {
   height: auto;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: ffffff; /* Fallback color */
+  border: 3px solid #8FCDFB;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #8FCDFB;
+  width: 80%;
+}
+
+.modal-content p {
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+}
+
+.modal-content button:hover {
+  background-color: #29a3fc;
+  border-style: none; 
+}
+
+/* The Close Button */
+.close {
+  color: #29a3fc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Email Sign-up */
 .email-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+}
+
+.email-container p {
+  font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+    margin-left: 20px;
 }
 
 .form-inline {
