@@ -128,6 +128,9 @@ p {
       border: none;
     }
 
+    .container .search-container {
+      float: right;
+    }
 
 /* Sidebar */
 #containerGrid {
@@ -434,6 +437,17 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+
+.copyRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.copyRight img {
+  margin-right: 5px;
 }
 
 footer p {
